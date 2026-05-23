@@ -1,0 +1,25 @@
+#Lizbeth San Agustin Vergara
+name: Pipeline CI - Linter
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Obtener código del repo
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar Flake8 (Linter)
+        run: pip install flake8
+
+      - name: Ejecutar Linter sobre el código
+        run: flake8 . --max-line-length=100
