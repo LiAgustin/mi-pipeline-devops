@@ -1,4 +1,4 @@
-
+#Lizbeth San Agustin Vergara
 
 def sumar(a, b):
     """Devuelve la suma de dos números."""
@@ -6,7 +6,7 @@ def sumar(a, b):
 
 
 def restar(a, b):
-    """Devuelve la resta de dos números.""" 
+    """Devuelve la resta de dos números."""
     return a - b
 
 
