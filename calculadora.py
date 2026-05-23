@@ -1,4 +1,4 @@
-# calculadora.py — Lizbeth San Agustin Vergara
+
 
 def sumar(a, b):
     """Devuelve la suma de dos números."""
