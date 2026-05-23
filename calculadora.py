@@ -20,7 +20,3 @@ def dividir(a, b):
     if b == 0:
         raise ValueError("No se puede dividir entre cero")
     return a / b
-
-git add .
-git commit -m "fix: eliminar línea vacía final W391"
-git push
